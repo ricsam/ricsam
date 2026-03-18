@@ -15,7 +15,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-## 🚀 My most important repos
+## 🚀 Repos
 
 - [enschedule](https://github.com/ricsam/enschedule)
 - [enstore](https://github.com/ricsam/enstore)
