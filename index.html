@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Richie is a software engineer building composable tools for data, infrastructure, web applications, and agent runtimes."
+    />
+    <meta name="theme-color" content="#eee9dc" />
+    <meta property="og:title" content="Richie — software engineer" />
+    <meta
+      property="og:description"
+      content="Small, sharp layers that compose into larger systems."
+    />
+    <meta property="og:type" content="website" />
+    <title>Richie — software engineer</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header wrap">
+      <a class="wordmark" href="#top" aria-label="Richie, home">
+        <span aria-hidden="true">R/</span>RICHIE
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#story">01 Story</a>
+        <a href="#systems">02 Systems</a>
+        <a href="#notes">03 Notes</a>
+      </nav>
+      <a class="header-link" href="https://github.com/ricsam">GitHub ↗</a>
+    </header>
+
+    <main id="main">
+      <section class="hero wrap" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Software engineer / systems builder</p>
+          <h1 id="hero-title">
+            I build tools that make complex systems feel predictable.<span
+              class="caret"
+              aria-hidden="true"
+            ></span>
+          </h1>
+          <p class="lede">
+            I’m Richie. I work across product, infrastructure, and developer
+            tools—usually by finding the reusable primitive inside a concrete
+            problem, then following it until the pieces form a stack.
+          </p>
+          <div class="hero-actions">
+            <a class="text-link" href="#systems">Read the work <span>↓</span></a>
+            <a class="text-link muted-link" href="https://github.com/ricsam?tab=repositories"
+              >Browse all repositories <span>↗</span></a
+            >
+          </div>
+        </div>
+
+        <aside class="hero-index" aria-label="Profile summary">
+          <p class="index-heading">INDEX CARD / 001</p>
+          <dl>
+            <div>
+              <dt>Public code</dt>
+              <dd>Since 2012</dd>
+            </div>
+            <div>
+              <dt>Working in</dt>
+              <dd>TypeScript, Bun, React, PostgreSQL</dd>
+            </div>
+            <div>
+              <dt>Interested in</dt>
+              <dd>Boundaries, state, composition, agents</dd>
+            </div>
+            <div>
+              <dt>Repository</dt>
+              <dd><a href="https://github.com/ricsam">github.com/ricsam</a></dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="story section wrap" id="story" aria-labelledby="story-title">
+        <header class="section-heading">
+          <p class="section-number">01 / THE STORY</p>
+          <h2 id="story-title">One problem, then a system.</h2>
+        </header>
+
+        <div class="story-layout">
+          <p class="story-intro">
+            My public trail starts with changing interfaces and ends—so far—with
+            changing what software is allowed to do. The scale grew. The habit
+            stayed the same: expose the hidden state, draw a clear boundary, and
+            make the difficult part reusable.
+          </p>
+
+          <ol class="timeline">
+            <li>
+              <p class="year">2012</p>
+              <div>
+                <h3>Make the interface tangible.</h3>
+                <p>
+                  <a href="https://github.com/ricsam/Page-Painter">Page Painter</a>
+                  let people draw directly on web pages.
+                  <a href="https://github.com/ricsam/Hot-Corn-Dog">Hot Corn Dog</a>
+                  made GNOME’s hot corners configurable. The first projects were
+                  small ways to make a computer fit the person using it.
+                </p>
+              </div>
+            </li>
+            <li>
+              <p class="year">2015—18</p>
+              <div>
+                <h3>Use software to model real work.</h3>
+                <p>
+                  Student-union systems, scientific models, small web products,
+                  machine-learning labs, and JavaScript-driven Terraform moved
+                  the work from interface tweaks toward data and operations.
+                </p>
+              </div>
+            </li>
+            <li>
+              <p class="year">2019—24</p>
+              <div>
+                <h3>Extract the hard part.</h3>
+                <p>
+                  React animation and collapse components, filesystem
+                  abstractions, JSONC tooling, and a job scheduler became
+                  focused libraries instead of one-off application code.
+                </p>
+              </div>
+            </li>
+            <li>
+              <p class="year">Now</p>
+              <div>
+                <h3>Compose the primitives.</h3>
+                <p>
+                  The current work is a set of connected systems: portable
+                  storage and jobs, spreadsheet-grade data interfaces, a typed
+                  Bun/React web stack, and constrained runtimes for agents.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <blockquote>
+          “The code changed. The through-line did not: capability should be
+          explicit, state should be inspectable, and useful pieces should
+          compose.”
+        </blockquote>
+      </section>
+
+      <section class="systems section wrap" id="systems" aria-labelledby="systems-title">
+        <header class="section-heading systems-heading">
+          <div>
+            <p class="section-number">02 / SELECTED SYSTEMS</p>
+            <h2 id="systems-title">Four stacks, not 130 tabs.</h2>
+          </div>
+          <p>
+            A concise map of the projects that best explain how I think and
+            build.
+          </p>
+        </header>
+
+        <div class="system-list">
+          <article class="system">
+            <div class="system-meta">
+              <p class="system-number">SYSTEM 01</p>
+              <p class="system-field">Files / work</p>
+            </div>
+            <div class="system-body">
+              <h3>Files should not care where they live.</h3>
+              <p>
+                <a href="https://github.com/ricsam/nafs">Nafs</a> presents a
+                Node-style filesystem over memory, disk, S3, and
+                <a href="https://github.com/ricsam/enstore">Enstore</a>.
+                Enstore turns that idea into an authenticated, streamable network
+                filesystem. <a href="https://github.com/ricsam/enschedule">Enschedule</a>
+                adds durable PostgreSQL-backed jobs and routes worker logs through
+                the same portable filesystem boundary.
+              </p>
+              <ul class="stack-line" aria-label="File and work stack">
+                <li><a href="https://github.com/ricsam/enstore">enstore</a></li>
+                <li><a href="https://github.com/ricsam/nafs">nafs</a></li>
+                <li><a href="https://github.com/ricsam/enschedule">enschedule</a></li>
+              </ul>
+              <p class="system-note">One familiar API. Local or remote. Scheduled or ad hoc.</p>
+            </div>
+          </article>
+
+          <article class="system">
+            <div class="system-meta">
+              <p class="system-number">SYSTEM 02</p>
+              <p class="system-field">Data / interaction</p>
+            </div>
+            <div class="system-body">
+              <h3>A data grid should behave like an instrument.</h3>
+              <p>
+                <a href="https://github.com/ricsam/react-tanstack-table-ui"
+                  >React TanStack Table UI</a
+                >
+                renders large, virtualized, skinnable tables.
+                <a href="https://github.com/ricsam/selection-manager">Selection Manager</a>
+                supplies spreadsheet-grade keyboard, mouse, editing, fill, and
+                clipboard behavior. <a href="https://github.com/ricsam/formula-engine"
+                  >Formula Engine</a
+                >
+                is building the sparse workbook model underneath it.
+              </p>
+              <ul class="stack-line" aria-label="Data interface stack">
+                <li>
+                  <a href="https://github.com/ricsam/react-tanstack-table-ui">table UI</a>
+                </li>
+                <li>
+                  <a href="https://github.com/ricsam/selection-manager">selection</a>
+                </li>
+                <li>
+                  <a href="https://github.com/ricsam/formula-engine">formulas</a>
+                </li>
+              </ul>
+              <p class="system-note">Rendering, interaction, and calculation remain separate.</p>
+            </div>
+          </article>
+
+          <article class="system">
+            <div class="system-meta">
+              <p class="system-number">SYSTEM 03</p>
+              <p class="system-field">Web / contracts</p>
+            </div>
+            <div class="system-body">
+              <h3>Types should survive the network.</h3>
+              <p>
+                <a href="https://github.com/ricsam/richie-rpc">Richie RPC</a>
+                carries Zod contracts from Bun servers to fetch clients, OpenAPI,
+                streaming, SSE, WebSockets, and React Query.
+                <a href="https://github.com/ricsam/richie-router">Richie Router</a>
+                adds generated, type-safe file routes without making the backend
+                execute frontend modules. Together they form the web spine now
+                used by Enschedule and my current AI platform work.
+              </p>
+              <ul class="stack-line" aria-label="Typed web stack">
+                <li><a href="https://github.com/ricsam/richie-rpc">richie-rpc</a></li>
+                <li><a href="https://github.com/ricsam/richie-router">richie-router</a></li>
+                <li><span>Bun + React</span></li>
+              </ul>
+              <p class="system-note">One contract, fewer translation layers.</p>
+            </div>
+          </article>
+
+          <article class="system">
+            <div class="system-meta">
+              <p class="system-number">SYSTEM 04</p>
+              <p class="system-field">Agents / boundaries</p>
+            </div>
+            <div class="system-body">
+              <h3>Give agents tools, not the machine.</h3>
+              <p>
+                <a href="https://github.com/ricsam/agentic-web-research"
+                  >Agentic Web Research</a
+                >
+                combines metasearch, browser rendering, and model-guided
+                exploration behind a streaming API.
+                <a href="https://github.com/ricsam/isolate">Isolate</a> provides
+                capability-controlled V8 runtimes; <a href="https://github.com/ricsam/shell-dsl"
+                  >Shell DSL</a
+                >
+                provides in-process, POSIX-inspired pipelines without default
+                host OS access. Together, they explore a safer execution model
+                for software that can act.
+              </p>
+              <ul class="stack-line" aria-label="Agent runtime stack">
+                <li>
+                  <a href="https://github.com/ricsam/agentic-web-research">research</a>
+                </li>
+                <li><a href="https://github.com/ricsam/isolate">isolate</a></li>
+                <li><a href="https://github.com/ricsam/shell-dsl">shell-dsl</a></li>
+              </ul>
+              <p class="system-note">Useful capability, explicit policy, bounded execution.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="notes section wrap" id="notes" aria-labelledby="notes-title">
+        <header class="section-heading">
+          <p class="section-number">03 / SMALLER NOTES</p>
+          <h2 id="notes-title">Focused tools along the way.</h2>
+        </header>
+
+        <div class="note-list">
+          <a class="note" href="https://github.com/ricsam/react-mixitup">
+            <span class="note-year">2019</span>
+            <span>
+              <strong>react-mixitup</strong>
+              <small>Declarative list transitions using CSS.</small>
+            </span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a class="note" href="https://github.com/ricsam/jsonc-cli">
+            <span class="note-year">2022</span>
+            <span>
+              <strong>jsonc-cli</strong>
+              <small>Read and modify commented JSON from the command line.</small>
+            </span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a class="note" href="https://github.com/ricsam/Hot-Corn-Dog">
+            <span class="note-year">2012</span>
+            <span>
+              <strong>Hot Corn Dog</strong>
+              <small>A configurable hot-corner extension for GNOME Shell.</small>
+            </span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="closing wrap" aria-label="Closing note">
+        <p class="closing-mark" aria-hidden="true">*</p>
+        <p>
+          I like software with a small public surface and a deep internal model.
+          If a system is powerful, its boundaries should be easy to explain.
+        </p>
+        <a class="text-link" href="https://github.com/ricsam">Continue on GitHub <span>↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer wrap">
+      <p>RICHIE / RICSAM</p>
+      <p>130+ public repositories. This is the index, not the inventory.</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
