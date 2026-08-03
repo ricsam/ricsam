@@ -5,15 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Richie is a software engineer building composable tools for data, infrastructure, web applications, and agent runtimes."
+      content="Richie is a software engineer building TypeScript tools and web applications."
     />
-    <meta name="theme-color" content="#eee9dc" />
-    <meta property="og:title" content="Richie — software engineer" />
-    <meta
-      property="og:description"
-      content="Small, sharp layers that compose into larger systems."
-    />
-    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#f7f7f5" />
     <title>Richie — software engineer</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
@@ -21,323 +15,117 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header wrap">
-      <a class="wordmark" href="#top" aria-label="Richie, home">
-        <span aria-hidden="true">R/</span>RICHIE
-      </a>
+    <header>
+      <a class="name" href="#top">Richie</a>
       <nav aria-label="Primary navigation">
-        <a href="#systems">01 Systems</a>
-        <a href="#story">02 History</a>
-        <a href="#notes">03 Tools</a>
+        <a href="#work">Work</a>
+        <a href="#history">History</a>
+        <a href="https://github.com/ricsam">GitHub</a>
       </nav>
-      <a class="header-link" href="https://github.com/ricsam">GitHub ↗</a>
     </header>
 
     <main id="main">
-      <section class="hero wrap" id="top" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">Software engineer / systems builder</p>
-          <h1 id="hero-title">
-            I build tools that make complex systems feel predictable.<span
-              class="caret"
-              aria-hidden="true"
-            ></span>
-          </h1>
-          <p class="lede">
-            I’m Richie. I build developer tools and applications across agent
-            runtimes, typed web systems, data interfaces, storage, and scheduled
-            work. This page starts with what I am building now, then works backwards.
-          </p>
-          <div class="hero-actions">
-            <a class="text-link" href="#systems">Read the work <span>↓</span></a>
-            <a class="text-link muted-link" href="https://github.com/ricsam?tab=repositories"
-              >Browse all repositories <span>↗</span></a
-            >
-          </div>
-        </div>
-
-        <aside class="hero-index" aria-label="Profile summary">
-          <p class="index-heading">INDEX CARD / 001</p>
-          <dl>
-            <div>
-              <dt>Current work</dt>
-              <dd>Agent runtimes and typed application infrastructure</dd>
-            </div>
-            <div>
-              <dt>Working in</dt>
-              <dd>TypeScript, Bun, React, PostgreSQL</dd>
-            </div>
-            <div>
-              <dt>Designing for</dt>
-              <dd>Explicit capabilities, observable state, composable APIs</dd>
-            </div>
-            <div>
-              <dt>Repository</dt>
-              <dd><a href="https://github.com/ricsam">github.com/ricsam</a></dd>
-            </div>
-          </dl>
-        </aside>
-      </section>
-
-      <section class="systems section wrap" id="systems" aria-labelledby="systems-title">
-        <header class="section-heading systems-heading">
-          <div>
-            <p class="section-number">01 / SELECTED SYSTEMS</p>
-            <h2 id="systems-title">How the current work fits together.</h2>
-          </div>
-          <p>
-            Four groups of projects, ordered from the work I am doing now and
-            described by the boundaries and data flows between them.
-          </p>
-        </header>
-
-        <div class="system-list">
-          <article class="system">
-            <div class="system-meta">
-              <p class="system-number">SYSTEM 01</p>
-              <p class="system-field">Agents / execution</p>
-            </div>
-            <div class="system-body">
-              <h3>Research, code execution, and shell tools with explicit boundaries.</h3>
-              <p>
-                <a href="https://github.com/ricsam/agentic-web-research"
-                  >Agentic Web Research</a
-                >
-                searches through a bundled SearXNG instance, renders selected pages
-                in Playwright, converts them to Markdown, and lets a model decide
-                what to inspect next. An authenticated REST API streams typed
-                progress events while URL checks reject private and internal hosts.
-                <a href="https://github.com/ricsam/isolate">Isolate</a> runs
-                JavaScript and TypeScript in V8 contexts whose files, modules,
-                network access, browser sessions, and host functions are supplied as
-                bindings. <a href="https://github.com/ricsam/shell-dsl">Shell DSL</a>
-                adds pipes, redirects, scripts, and a virtual filesystem using only
-                commands registered by the host process.
-              </p>
-              <ul class="stack-line" aria-label="Agent runtime stack">
-                <li>
-                  <a href="https://github.com/ricsam/agentic-web-research">research</a>
-                </li>
-                <li><a href="https://github.com/ricsam/isolate">isolate</a></li>
-                <li><a href="https://github.com/ricsam/shell-dsl">shell-dsl</a></li>
-              </ul>
-              <p class="system-note">Each capability is passed in; none is assumed.</p>
-            </div>
-          </article>
-
-          <article class="system">
-            <div class="system-meta">
-              <p class="system-number">SYSTEM 02</p>
-              <p class="system-field">Web / contracts</p>
-            </div>
-            <div class="system-body">
-              <h3>One contract connects the server, client, and documentation.</h3>
-              <p>
-                <a href="https://github.com/ricsam/richie-rpc">Richie RPC</a>
-                defines requests and responses with Zod, validates them on both
-                sides of a Bun API, and derives typed fetch clients, OpenAPI, React
-                Query options, NDJSON streams, SSE, and WebSocket messages.
-                <a href="https://github.com/ricsam/richie-router">Richie Router</a>
-                scans route files and generates two different artifacts: a client
-                route tree that imports React modules, and a server-safe manifest
-                that contains only route structure and metadata. The backend can
-                serve the SPA and resolve head tags without executing frontend code.
-              </p>
-              <ul class="stack-line" aria-label="Typed web stack">
-                <li><a href="https://github.com/ricsam/richie-rpc">richie-rpc</a></li>
-                <li><a href="https://github.com/ricsam/richie-router">richie-router</a></li>
-                <li><span>Bun + React</span></li>
-              </ul>
-              <p class="system-note">Shared types cross the boundary; frontend modules do not.</p>
-            </div>
-          </article>
-
-          <article class="system">
-            <div class="system-meta">
-              <p class="system-number">SYSTEM 03</p>
-              <p class="system-field">Data / interaction</p>
-            </div>
-            <div class="system-body">
-              <h3>Rendering, interaction, and workbook state are separate layers.</h3>
-              <p>
-                <a href="https://github.com/ricsam/react-tanstack-table-ui"
-                  >React TanStack Table UI</a
-                >
-                turns TanStack Table state into virtualized rows and columns, with
-                presentation supplied by interchangeable skins.
-                <a href="https://github.com/ricsam/selection-manager">Selection Manager</a>
-                owns rectangular and multi-range selection, keyboard movement,
-                editing, fill handles, merged cells, and TSV clipboard operations
-                independently of the table renderer.
-                <a href="https://github.com/ricsam/formula-engine">Formula Engine</a>
-                stores workbooks as sparse maps, translates A1 addresses, manages
-                sheets and named expressions, and is where parsing, dependencies,
-                and evaluation are being developed.
-              </p>
-              <ul class="stack-line" aria-label="Data interface stack">
-                <li>
-                  <a href="https://github.com/ricsam/react-tanstack-table-ui">rendering</a>
-                </li>
-                <li>
-                  <a href="https://github.com/ricsam/selection-manager">interaction</a>
-                </li>
-                <li>
-                  <a href="https://github.com/ricsam/formula-engine">workbook state</a>
-                </li>
-              </ul>
-              <p class="system-note">The UI can change without replacing the data model.</p>
-            </div>
-          </article>
-
-          <article class="system">
-            <div class="system-meta">
-              <p class="system-number">SYSTEM 04</p>
-              <p class="system-field">Files / scheduled work</p>
-            </div>
-            <div class="system-body">
-              <h3>The same filesystem interface can back local and remote work.</h3>
-              <p>
-                <a href="https://github.com/ricsam/nafs">Nafs</a> presents a
-                subset of Node’s filesystem API over memory, local disk, S3, or an
-                <a href="https://github.com/ricsam/enstore">Enstore</a> server.
-                Enstore exposes streamed file operations over HTTP with users,
-                roles, a CLI, and an <code>fs</code>-style client.
-                <a href="https://github.com/ricsam/enschedule">Enschedule</a>
-                stores schedules and runs in PostgreSQL; workers register jobs with
-                schemas, claim work, and publish status and logs to the dashboard.
-                Nafs lets those logs move between local and remote storage without
-                changing the worker-facing API.
-              </p>
-              <ul class="stack-line" aria-label="File and work stack">
-                <li><a href="https://github.com/ricsam/enstore">enstore</a></li>
-                <li><a href="https://github.com/ricsam/nafs">nafs</a></li>
-                <li><a href="https://github.com/ricsam/enschedule">enschedule</a></li>
-              </ul>
-              <p class="system-note">Storage is selected at the boundary, not inside the job.</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="story section wrap" id="story" aria-labelledby="story-title">
-        <header class="section-heading">
-          <p class="section-number">02 / WORKING BACKWARDS</p>
-          <h2 id="story-title">The path to the current systems.</h2>
-        </header>
-
-        <div class="story-layout">
-          <p class="story-intro">
-            The recent projects share code and architectural choices, so they make
-            more sense as a sequence than as a repository list. Starting from now,
-            this is how the layers emerged.
-          </p>
-
-          <ol class="timeline">
-            <li>
-              <p class="year">Now</p>
-              <div>
-                <h3>Constrained runtimes for agentic software.</h3>
-                <p>
-                  Current work combines web research, browser automation, model
-                  calls, V8 isolation, and an in-process shell. The focus is on how
-                  agents receive tools, how work is cancelled, and how nested
-                  execution remains subject to host-defined limits.
-                </p>
-              </div>
-            </li>
-            <li>
-              <p class="year">2025—26</p>
-              <div>
-                <h3>Typed application infrastructure.</h3>
-                <p>
-                  Building applications with Bun and React led to Richie RPC and
-                  Richie Router. In parallel, table work split into renderer,
-                  selection, and workbook packages so each layer could evolve and
-                  be tested independently.
-                </p>
-              </div>
-            </li>
-            <li>
-              <p class="year">2022—25</p>
-              <div>
-                <h3>Jobs, files, and operational state.</h3>
-                <p>
-                  Enschedule grew from job registration and cron execution into a
-                  PostgreSQL-backed worker system with a dashboard and typed API.
-                  Enstore and Nafs supplied a consistent route for files and logs
-                  across local development and deployed workers.
-                </p>
-              </div>
-            </li>
-            <li>
-              <p class="year">2019—22</p>
-              <div>
-                <h3>Libraries with narrow responsibilities.</h3>
-                <p>
-                  React component libraries, command-line tools, and the first Nafs
-                  implementation established the pattern used in the newer work:
-                  keep stateful mechanics in a focused package and let applications
-                  decide how they are presented and deployed.
-                </p>
-              </div>
-            </li>
-          </ol>
-        </div>
-
-        <blockquote>
-          “Capability should be explicit, state should be inspectable, and each
-          layer should remain useful on its own.”
-        </blockquote>
-      </section>
-
-      <section class="notes section wrap" id="notes" aria-labelledby="notes-title">
-        <header class="section-heading">
-          <p class="section-number">03 / FOCUSED TOOLS</p>
-          <h2 id="notes-title">Smaller packages with one job.</h2>
-        </header>
-
-        <div class="note-list">
-          <a class="note" href="https://github.com/ricsam/richie-cron">
-            <span class="note-year">2026</span>
-            <span>
-              <strong>richie-cron</strong>
-              <small>Timezone-aware cron parsing and iteration without filesystem dependencies.</small>
-            </span>
-            <span aria-hidden="true">↗</span>
-          </a>
-          <a class="note" href="https://github.com/ricsam/jsonc-cli">
-            <span class="note-year">2022</span>
-            <span>
-              <strong>jsonc-cli</strong>
-              <small>Read, modify, and format commented JSON through stdin and JSON paths.</small>
-            </span>
-            <span aria-hidden="true">↗</span>
-          </a>
-          <a class="note" href="https://github.com/ricsam/react-mixitup">
-            <span class="note-year">2019</span>
-            <span>
-              <strong>react-mixitup</strong>
-              <small>Animate list insertion, removal, and reordering with CSS transitions.</small>
-            </span>
-            <span aria-hidden="true">↗</span>
-          </a>
-        </div>
-      </section>
-
-      <section class="closing wrap" aria-label="Closing note">
-        <p class="closing-mark" aria-hidden="true">*</p>
+      <section class="intro" id="top">
+        <h1>Software engineer.</h1>
         <p>
-          I like software with a small public surface and a deep internal model.
-          If a system is powerful, its boundaries should be easy to explain.
+          I build TypeScript tools and web applications. Currently working on
+          agent runtimes, typed Bun/React infrastructure, data grids, storage,
+          and job systems.
         </p>
-        <a class="text-link" href="https://github.com/ricsam">Continue on GitHub <span>↗</span></a>
       </section>
+
+      <section id="work" aria-labelledby="work-title">
+        <h2 id="work-title">Current work</h2>
+
+        <article>
+          <h3>Agent tools</h3>
+          <p class="projects">
+            <a href="https://github.com/ricsam/agentic-web-research">agentic-web-research</a>
+            <a href="https://github.com/ricsam/isolate">isolate</a>
+            <a href="https://github.com/ricsam/shell-dsl">shell-dsl</a>
+          </p>
+          <p>
+            Research runs through SearXNG, Playwright, and a model-directed search loop.
+            Code runs in V8 sandboxes with host-provided files, fetch, browser, and tools.
+            Shell commands run in-process against a virtual filesystem.
+          </p>
+        </article>
+
+        <article>
+          <h3>Web stack</h3>
+          <p class="projects">
+            <a href="https://github.com/ricsam/richie-rpc">richie-rpc</a>
+            <a href="https://github.com/ricsam/richie-router">richie-router</a>
+          </p>
+          <p>
+            A Zod contract drives Bun server validation, typed clients, OpenAPI,
+            streaming, and React Query. Route files generate separate client and
+            server manifests so frontend modules stay out of the backend.
+          </p>
+        </article>
+
+        <article>
+          <h3>Data interfaces</h3>
+          <p class="projects">
+            <a href="https://github.com/ricsam/react-tanstack-table-ui">react-tanstack-table-ui</a>
+            <a href="https://github.com/ricsam/selection-manager">selection-manager</a>
+            <a href="https://github.com/ricsam/formula-engine">formula-engine</a>
+          </p>
+          <p>
+            Virtualized table rendering, selection and editing state, and sparse
+            workbook storage are separate packages. They share coordinates and
+            cell data without sharing UI code.
+          </p>
+        </article>
+
+        <article>
+          <h3>Files and jobs</h3>
+          <p class="projects">
+            <a href="https://github.com/ricsam/nafs">nafs</a>
+            <a href="https://github.com/ricsam/enstore">enstore</a>
+            <a href="https://github.com/ricsam/enschedule">enschedule</a>
+          </p>
+          <p>
+            Nafs exposes a Node-style filesystem over memory, disk, S3, and Enstore.
+            Enschedule workers claim PostgreSQL jobs and write logs through the same
+            storage interface.
+          </p>
+        </article>
+      </section>
+
+      <section id="history" aria-labelledby="history-title">
+        <h2 id="history-title">Recent history</h2>
+        <dl class="history">
+          <div>
+            <dt>Now</dt>
+            <dd>Agent execution and web research.</dd>
+          </div>
+          <div>
+            <dt>2025–26</dt>
+            <dd>Typed web and data-grid packages.</dd>
+          </div>
+          <div>
+            <dt>2022–25</dt>
+            <dd>Job scheduling, network files, and CLI tools.</dd>
+          </div>
+          <div>
+            <dt>2019–22</dt>
+            <dd>React libraries and the first Nafs implementation.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <p class="more">
+        More:
+        <a href="https://github.com/ricsam/richie-cron">richie-cron</a>,
+        <a href="https://github.com/ricsam/jsonc-cli">jsonc-cli</a>,
+        <a href="https://github.com/ricsam/react-mixitup">react-mixitup</a>.
+      </p>
     </main>
 
-    <footer class="site-footer wrap">
-      <p>RICHIE / RICSAM</p>
-      <p>130+ public repositories. This is the index, not the inventory.</p>
-      <a href="#top">Back to top ↑</a>
+    <footer>
+      <span>Richie / ricsam</span>
+      <a href="https://github.com/ricsam">github.com/ricsam</a>
     </footer>
   </body>
 </html>
