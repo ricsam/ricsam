@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Richie is a software engineer building TypeScript tools and web applications."
+      content="Selected software projects by Richie (ricsam)."
     />
     <meta name="theme-color" content="#f7f7f5" />
-    <title>Richie — software engineer</title>
+    <title>Richie — projects</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -18,8 +18,8 @@
     <header>
       <a class="name" href="#top">Richie</a>
       <nav aria-label="Primary navigation">
-        <a href="#work">Work</a>
-        <a href="#history">History</a>
+        <a href="#projects">Projects</a>
+        <a href="#other">Other</a>
         <a href="https://github.com/ricsam">GitHub</a>
       </nav>
     </header>
@@ -27,100 +27,269 @@
     <main id="main">
       <section class="intro" id="top">
         <h1>Software engineer.</h1>
-        <p>
-          I build TypeScript tools and web applications. Currently working on
-          agent runtimes, typed Bun/React infrastructure, data grids, storage,
-          and job systems.
-        </p>
+        <p>TypeScript, Bun, React, PostgreSQL. Selected projects below.</p>
       </section>
 
-      <section id="work" aria-labelledby="work-title">
-        <h2 id="work-title">Current work</h2>
+      <section id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projects</h2>
 
         <article>
-          <h3>Agent tools</h3>
-          <p class="projects">
-            <a href="https://github.com/ricsam/agentic-web-research">agentic-web-research</a>
-            <a href="https://github.com/ricsam/isolate">isolate</a>
-            <a href="https://github.com/ricsam/shell-dsl">shell-dsl</a>
-          </p>
-          <p>
-            Research runs through SearXNG, Playwright, and a model-directed search loop.
-            Code runs in V8 sandboxes with host-provided files, fetch, browser, and tools.
-            Shell commands run in-process against a virtual filesystem.
-          </p>
+          <p class="year">2026</p>
+          <div>
+            <h3>
+              <a href="https://github.com/ricsam/agentic-web-research">agentic-web-research</a>
+            </h3>
+            <p>
+              A self-hosted research API. It searches through SearXNG, renders
+              pages with Playwright, converts them to Markdown, and streams a
+              model-directed research loop over SSE. It also handles URL safety,
+              task cancellation, leases, rate limits, and API keys.
+            </p>
+            <p class="links">
+              <a href="https://github.com/ricsam/agentic-web-research">code</a>
+              <a href="https://agentic-web-research-sowmkak8zagj.r5d.app">demo</a>
+            </p>
+          </div>
         </article>
 
         <article>
-          <h3>Web stack</h3>
-          <p class="projects">
-            <a href="https://github.com/ricsam/richie-rpc">richie-rpc</a>
-            <a href="https://github.com/ricsam/richie-router">richie-router</a>
-          </p>
-          <p>
-            A Zod contract drives Bun server validation, typed clients, OpenAPI,
-            streaming, and React Query. Route files generate separate client and
-            server manifests so frontend modules stay out of the backend.
-          </p>
+          <p class="year">2026</p>
+          <div>
+            <h3><a href="https://github.com/ricsam/isolate">isolate</a></h3>
+            <p>
+              A host for JavaScript and TypeScript V8 sandboxes. It supports
+              scripts, app servers, tests, persistent sessions, nested runtimes,
+              and Playwright. Files, modules, fetch, browser access, and host
+              functions are explicit bindings; aborting work terminates the runtime.
+            </p>
+            <p class="links">
+              <a href="https://github.com/ricsam/isolate">code</a>
+              <a href="https://www.npmjs.com/package/@ricsam/isolate">npm</a>
+            </p>
+          </div>
         </article>
 
         <article>
-          <h3>Data interfaces</h3>
-          <p class="projects">
-            <a href="https://github.com/ricsam/react-tanstack-table-ui">react-tanstack-table-ui</a>
-            <a href="https://github.com/ricsam/selection-manager">selection-manager</a>
-            <a href="https://github.com/ricsam/formula-engine">formula-engine</a>
-          </p>
-          <p>
-            Virtualized table rendering, selection and editing state, and sparse
-            workbook storage are separate packages. They share coordinates and
-            cell data without sharing UI code.
-          </p>
+          <p class="year">2026</p>
+          <div>
+            <h3><a href="https://github.com/ricsam/shell-dsl">shell-dsl</a></h3>
+            <p>
+              A POSIX-style shell interpreter where commands run in-process
+              against a virtual or contained filesystem. It implements pipelines,
+              redirects, expansion, control flow, scripts, streaming sessions,
+              and a small version-control system without default host OS access.
+            </p>
+            <p class="links">
+              <a href="https://github.com/ricsam/shell-dsl">code</a>
+              <a href="https://www.npmjs.com/package/shell-dsl">npm</a>
+            </p>
+          </div>
         </article>
 
         <article>
-          <h3>Files and jobs</h3>
-          <p class="projects">
-            <a href="https://github.com/ricsam/nafs">nafs</a>
-            <a href="https://github.com/ricsam/enstore">enstore</a>
-            <a href="https://github.com/ricsam/enschedule">enschedule</a>
-          </p>
-          <p>
-            Nafs exposes a Node-style filesystem over memory, disk, S3, and Enstore.
-            Enschedule workers claim PostgreSQL jobs and write logs through the same
-            storage interface.
-          </p>
+          <p class="year">2026</p>
+          <div>
+            <h3><a href="https://github.com/ricsam/richie-router">richie-router</a></h3>
+            <p>
+              A file-based React router for client-rendered Bun applications.
+              Route tooling generates an importing client tree and a separate
+              server-safe manifest. The server can match SPA routes and resolve
+              head tags without importing frontend modules.
+            </p>
+            <p class="links">
+              <a href="https://github.com/ricsam/richie-router">code</a>
+              <a href="https://docs.ricsam.dev/richie-router">docs</a>
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <p class="year">2025</p>
+          <div>
+            <h3><a href="https://github.com/ricsam/richie-rpc">richie-rpc</a></h3>
+            <p>
+              A Zod contract library for Bun APIs. One contract supplies server
+              and client validation, typed fetch calls, OpenAPI, React Query
+              options, NDJSON streams, server-sent events, and WebSocket messages.
+            </p>
+            <p class="links">
+              <a href="https://github.com/ricsam/richie-rpc">code</a>
+              <a href="https://www.npmjs.com/org/richie-rpc">npm packages</a>
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <p class="year">2025</p>
+          <div>
+            <h3><a href="https://github.com/ricsam/formula-engine">formula-engine</a></h3>
+            <p>
+              A spreadsheet calculation engine with sparse workbook storage, an
+              expression parser and evaluator, dependency tracking, caching, and
+              cycle detection. It also handles copied and moved references,
+              autofill, metadata, named expressions, and serializable snapshots.
+            </p>
+            <p class="links">
+              <a href="https://github.com/ricsam/formula-engine">code</a>
+              <a href="https://formula-engine-three.vercel.app">demo</a>
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <p class="year">2025</p>
+          <div>
+            <h3><a href="https://github.com/ricsam/selection-manager">selection-manager</a></h3>
+            <p>
+              Selection state for spreadsheet-like grids. It covers multiple
+              ranges, pointer and keyboard navigation, editing, merged cells,
+              fill handles, and TSV copy/paste. The state engine can be used with
+              its React hooks or wired to another renderer.
+            </p>
+            <p class="links">
+              <a href="https://github.com/ricsam/selection-manager">code</a>
+              <a href="https://www.npmjs.com/package/@ricsam/selection-manager">npm</a>
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <p class="year">2025</p>
+          <div>
+            <h3>
+              <a href="https://github.com/ricsam/react-tanstack-table-ui">react-tanstack-table-ui</a>
+            </h3>
+            <p>
+              UI components for TanStack Table with row and column virtualization.
+              The table behavior lives in a core package while Material UI,
+              Tailwind, and Bleu are separate skins.
+            </p>
+            <p class="links">
+              <a href="https://github.com/ricsam/react-tanstack-table-ui">code</a>
+              <a href="https://rttui-docs.vercel.app">docs and demo</a>
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <p class="year">2024</p>
+          <div>
+            <h3><a href="https://github.com/ricsam/enstore">enstore</a></h3>
+            <p>
+              A network file server split into server, CLI, and filesystem client
+              packages. It streams file operations over HTTP and adds bcrypt users,
+              role permissions, chunked uploads, and an API shaped like Node's
+              <code>fs</code>.
+            </p>
+            <p class="links">
+              <a href="https://github.com/ricsam/enstore">code</a>
+              <a href="https://enstore.mintlify.site">docs</a>
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <p class="year">2022</p>
+          <div>
+            <h3><a href="https://github.com/ricsam/enschedule">enschedule</a></h3>
+            <p>
+              A PostgreSQL-backed scheduler with Bun workers and a React dashboard.
+              Workers register jobs with Zod input schemas, poll for runs, expose a
+              typed RPC API, and write logs through Nafs. Access rules apply to
+              functions, schedules, runs, and logs.
+            </p>
+            <p class="links">
+              <a href="https://github.com/ricsam/enschedule">code</a>
+              <a href="https://enschedule-dashboard.vercel.app">website</a>
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <p class="year">2020</p>
+          <div>
+            <h3><a href="https://github.com/ricsam/nafs">nafs</a></h3>
+            <p>
+              A URI-selected filesystem abstraction. The same Node-style read,
+              write, and stream API can use memory, local files, Amazon S3, or an
+              Enstore server, keeping storage selection out of application code.
+            </p>
+            <p class="links">
+              <a href="https://github.com/ricsam/nafs">code</a>
+              <a href="https://nafs-three.vercel.app">docs</a>
+              <a href="https://www.npmjs.com/package/nafs">npm</a>
+            </p>
+          </div>
         </article>
       </section>
 
-      <section id="history" aria-labelledby="history-title">
-        <h2 id="history-title">Recent history</h2>
-        <dl class="history">
-          <div>
-            <dt>Now</dt>
-            <dd>Agent execution and web research.</dd>
-          </div>
-          <div>
-            <dt>2025–26</dt>
-            <dd>Typed web and data-grid packages.</dd>
-          </div>
-          <div>
-            <dt>2022–25</dt>
-            <dd>Job scheduling, network files, and CLI tools.</dd>
-          </div>
-          <div>
-            <dt>2019–22</dt>
-            <dd>React libraries and the first Nafs implementation.</dd>
-          </div>
-        </dl>
-      </section>
+      <section id="other" aria-labelledby="other-title">
+        <h2 id="other-title">Other published work</h2>
 
-      <p class="more">
-        More:
-        <a href="https://github.com/ricsam/richie-cron">richie-cron</a>,
-        <a href="https://github.com/ricsam/jsonc-cli">jsonc-cli</a>,
-        <a href="https://github.com/ricsam/react-mixitup">react-mixitup</a>.
-      </p>
+        <article>
+          <p class="year">Anocca</p>
+          <div>
+            <h3>
+              <a href="https://github.com/anocca-ab/sequence-viewer">sequence-viewer</a>
+            </h3>
+            <p>
+              A DNA and protein sequence viewer developed at Anocca. The monorepo
+              separates linear and circular renderers, React components, Material
+              UI integration, state backends, utilities, and an embeddable app.
+            </p>
+            <p class="links">
+              <a href="https://github.com/anocca-ab/sequence-viewer">code</a>
+              <a href="https://anocca-ab.github.io/sequence-viewer/">docs</a>
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <p class="year">2026</p>
+          <div>
+            <h3><a href="https://github.com/ricsam/richie-cron">richie-cron</a></h3>
+            <p>
+              A pure cron parser and date iterator built on date-fns. It supports
+              time zones, optional seconds, aliases, ranges, steps, last-day and
+              nth-weekday rules, and seeded hash values.
+            </p>
+            <p class="links"><a href="https://github.com/ricsam/richie-cron">code</a></p>
+          </div>
+        </article>
+
+        <article>
+          <p class="year">2022</p>
+          <div>
+            <h3><a href="https://github.com/ricsam/jsonc-cli">jsonc-cli</a></h3>
+            <p>
+              A command-line front end to <code>jsonc-parser</code>. It reads values
+              by JSON path and modifies or formats commented JSON through stdin,
+              including in-place file workflows.
+            </p>
+            <p class="links">
+              <a href="https://github.com/ricsam/jsonc-cli">code</a>
+              <a href="https://www.npmjs.com/package/jsonc-cli">npm</a>
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <p class="year">2019</p>
+          <div>
+            <h3><a href="https://github.com/ricsam/react-mixitup">react-mixitup</a></h3>
+            <p>
+              A React component for animating list insertion, removal, and
+              reordering. It computes layout changes and leaves the transition,
+              item rendering, and wrapper rendering to the caller.
+            </p>
+            <p class="links">
+              <a href="https://github.com/ricsam/react-mixitup">code</a>
+              <a href="https://react-mixitup.ricsam.dev">docs</a>
+              <a href="https://www.npmjs.com/package/react-mixitup">npm</a>
+            </p>
+          </div>
+        </article>
+      </section>
     </main>
 
     <footer>
