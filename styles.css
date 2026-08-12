@@ -86,37 +86,23 @@ nav {
 }
 
 main {
-  padding: 72px 0 48px;
+  padding: 48px 0;
 }
 
-.intro {
-  padding-bottom: 72px;
-}
-
-h1,
 h2,
 h3,
 p {
   margin-top: 0;
 }
 
-h1 {
-  margin-bottom: 14px;
-  font-size: clamp(2rem, 7vw, 3.25rem);
-  font-weight: 600;
-  letter-spacing: -0.04em;
-  line-height: 1.1;
-}
-
-.intro p {
-  margin-bottom: 0;
-  color: var(--muted);
-  font-size: 16px;
-}
-
-section:not(.intro) {
+section {
   padding: 48px 0;
   border-top: 1px solid var(--line);
+}
+
+main section:first-child {
+  padding-top: 0;
+  border-top: 0;
 }
 
 h2 {
@@ -186,14 +172,6 @@ footer {
 
   nav {
     gap: 12px;
-  }
-
-  main {
-    padding-top: 48px;
-  }
-
-  .intro {
-    padding-bottom: 48px;
   }
 
   article {
